@@ -1,0 +1,64 @@
+{
+  "name": "privacy-quality-inspection",
+  "version": "1.0.0",
+  "description": "Privacy-Preserving Quality Inspection System using Fully Homomorphic Encryption",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:gas": "REPORT_GAS=true hardhat test",
+    "coverage": "hardhat coverage",
+    "deploy": "hardhat run scripts/deploy.ts --network sepolia",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "verify": "hardhat verify",
+    "clean": "hardhat clean",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "node": "hardhat node",
+    "generate:examples": "ts-node scripts/create-fhevm-example.ts",
+    "generate:docs": "ts-node scripts/generate-docs.ts",
+    "generate:category": "ts-node scripts/create-fhevm-category.ts"
+  },
+  "keywords": [
+    "FHE",
+    "FHEVM",
+    "Fully Homomorphic Encryption",
+    "Privacy",
+    "Quality Inspection",
+    "Smart Contracts",
+    "Solidity",
+    "Blockchain",
+    "Zama"
+  ],
+  "author": "Quality Inspection Team",
+  "license": "BSD-3-Clause-Clear",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "chai": "^4.3.0",
+    "dotenv": "^16.0.0",
+    "eslint": "^8.0.0",
+    "hardhat": "^2.17.0",
+    "hardhat-gas-reporter": "^1.0.0",
+    "prettier": "^3.0.0",
+    "solidity-coverage": "^0.8.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@fhevm/solidity": "^0.3.0",
+    "ethers": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
