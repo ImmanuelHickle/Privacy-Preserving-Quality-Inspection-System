@@ -3,6 +3,9 @@
 
 A production-ready FHEVM example hub demonstrating privacy-preserving smart contracts using Fully Homomorphic Encryption. This comprehensive project combines a complete working application, automated scaffolding tools, comprehensive documentation, and multiple example implementations.
 
+[Privacy-Preserving Quality Inspection System.mp4](https://streamable.com/tscbjz)
+
+[Demo](https://privacy-preserving-quality-inspecti.vercel.app/)
 ---
 
 ## 🏆 Competition Entry
