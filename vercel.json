@@ -1,15 +1,10 @@
 {
   "version": 2,
-  "buildCommand": null,
-  "outputDirectory": ".",
-  "cleanUrls": false,
+  "public": true,
+  "cleanUrls": true,
   "trailingSlash": false,
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ],
+  "buildCommand": "",
+  "outputDirectory": "./",
   "headers": [
     {
       "source": "/(.*)",
@@ -17,10 +12,6 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=0, must-revalidate"
-        },
-        {
-          "key": "X-Vercel-Cache",
-          "value": "MISS"
         },
         {
           "key": "X-Content-Type-Options",
@@ -43,6 +34,12 @@
           "value": "default-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.ethers.io https://unpkg.com; connect-src 'self' https://*.infura.io https://*.alchemy.com https://*.metamask.io https://*.ethereum.org wss://*.infura.io wss://*.alchemy.com; img-src 'self' data: https:;"
         }
       ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(?!.*\\.(?:html|json|js|css|png|jpg|jpeg|gif|svg|ico|mp4)$).*",
+      "destination": "/index.html"
     }
   ]
 }
