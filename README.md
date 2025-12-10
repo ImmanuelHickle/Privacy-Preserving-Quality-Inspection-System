@@ -6,6 +6,8 @@ A production-ready FHEVM example hub demonstrating privacy-preserving smart cont
 [Privacy-Preserving Quality Inspection System.mp4](https://streamable.com/tscbjz)
 
 [Demo](https://privacy-preserving-quality-inspecti.vercel.app/)
+
+
 ---
 
 ## 🏆 Competition Entry
