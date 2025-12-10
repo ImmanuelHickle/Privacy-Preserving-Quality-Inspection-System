@@ -1,7 +1,7 @@
 {
   "version": 2,
   "public": true,
-  "cleanUrls": true,
+  "cleanUrls": false,
   "trailingSlash": false,
   "buildCommand": "",
   "outputDirectory": "./",
@@ -34,12 +34,6 @@
           "value": "default-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.ethers.io https://unpkg.com; connect-src 'self' https://*.infura.io https://*.alchemy.com https://*.metamask.io https://*.ethereum.org wss://*.infura.io wss://*.alchemy.com; img-src 'self' data: https:;"
         }
       ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(?!.*\\.(?:html|json|js|css|png|jpg|jpeg|gif|svg|ico|mp4)$).*",
-      "destination": "/index.html"
     }
   ]
 }
